@@ -1,4 +1,5 @@
 //checks if the the letter provided by the user matches one or more of the letters in the word
+let triesLeft = 6;
 var checkGuesses = function() {
   var guessValue = document.guessForm.elements["letterInput"].value; // the letter provided by the user
   var inputReset = document.guessForm.elements["letterInput"];
@@ -38,18 +39,20 @@ function userLetterGuess(userGuess, guessValue) {
     var letter = document.createTextNode(" " + guessValue);
     generateLetter.appendChild(letter);
     wrongGuess++;
+    triesLeft--;
+    document.querySelector(".tries").innerHTML = triesLeft;
   }
 }
 
 function winner(guessFieldFull) {
   if (guessFieldFull) {
-    window.alert("You win! you guessed " + randomWord);
+    M.toast({ html: "You Win!", classes: "rounded" });
   }
 }
 
 function looser(wrongGuess) {
   if (wrongGuess === 6) {
-    window.alert("The Death Eaters got you!");
+    M.toast({ html: "Voldemort killed you", classes: "rounded" });
   }
 }
 

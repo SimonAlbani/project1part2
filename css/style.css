@@ -22,7 +22,7 @@ body {
 
 footer {
   position: absolute;
-  height: 160px;
+  height: 100px;
   width: 100%;
   bottom: 0;
   background-color: black;
@@ -43,4 +43,15 @@ h1 {
 input {
   font-family: hogwarts;
   font-weight: bold;
+  max-width: 100px;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+.toast {
+  background-color: blueviolet;
+  width: 500px;
+  font-size: 50px;
 }
