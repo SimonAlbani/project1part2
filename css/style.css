@@ -1,0 +1,46 @@
+@font-face {
+  font-family: harryPotter;
+  src: url(../fonts/harrypotter.ttf);
+}
+
+@font-face {
+  font-family: hogwarts;
+  src: url(../fonts/hogwarts.ttf);
+}
+
+body {
+  text-align: center;
+  font-family: hogwarts;
+  color: white;
+  background-image: url("background_image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 20px;
+  background-color: black;
+}
+
+footer {
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  left: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  word-spacing: 5px;
+}
+
+h1 {
+  font-family: harryPotter;
+  font-size: 4em;
+}
+
+input {
+  font-family: hogwarts;
+  font-weight: bold;
+}
